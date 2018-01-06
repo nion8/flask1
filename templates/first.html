@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flask.css') }}">
     <script> src = "{{ url_for('static', filename='js/jquery.min.js') }}"</script>
     <script> type = "text/javascript"
@@ -9,11 +8,19 @@
         $(document).ready(function () {
         })
     </script>
+    <meta charset="UTF-8">
     <title>{{ title }}</title>
 </head>
 <body>
-<div> class="square">
+     <div> class="square">
 
-</div>
+    <div class="container">
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+    </div>
+
+     </div>
 </body>
 </html>

@@ -1,12 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask
+from config import Configuration
 
 #
 app = Flask(__name__)
+app.config.from_object(Configuration)
 
-
-@app.route('/')
-def hello_world():
-    return render_template('first.html', title='Главная страница')
+#
+# @app.route('/')
+# def hello_world():
+#     return render_template('first.html', title='Главная страница')
     #
     # @app.route('/user/<username>')
     # def xxx(username):
@@ -14,8 +16,8 @@ def hello_world():
     #
 
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
 #
 #
 # # remdom

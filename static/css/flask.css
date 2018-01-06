@@ -1,8 +1,8 @@
-.square {
+.square{
     width: 500px;
     height: 500px;
     border: dotted;
     border-color: black;
     border-width: 1px;
-    background-color: blanchedalmond;
+    background-color: #ffdba0;
 }
