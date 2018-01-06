@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flask.css') }}">
+    <script> src = "{{ url_for('static', filename='js/jquery.min.js') }}"</script>
+    <script> type = "text/javascript"
+    charset = "utf-8" >
+        $(document).ready(function () {
+        })
+    </script>
     <title>{{ title }}</title>
 </head>
 <body>
- <h1>Привет Андрей!</h1>
+
+<div> class="square">
+
+</div>
 </body>
 </html>
