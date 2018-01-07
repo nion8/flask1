@@ -4,4 +4,4 @@ from flask import render_template
 @app.route('/')
 def index():
     name = 'Алексей'
-    return render_template('first.html', n=name)
+    return render_template('first.html')
