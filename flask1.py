@@ -7,7 +7,7 @@ from posts.blueprint import posts
 app = Flask(__name__)
 app.config.from_object(Configuration)
 
-app.register_blueprint(posts, url_prefix='flask1')
+app.register_blueprint(posts, url_prefix='/flask1')
 
 #
 # @app.route('/')
