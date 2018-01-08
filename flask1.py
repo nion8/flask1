@@ -2,18 +2,11 @@ from flask import Flask
 from config import Configuration
 from flask_sqlalchemy import SQLAlchemy
 
-from posts.blueprint import posts
 
-#
 app = Flask(__name__)
 app.config.from_object(Configuration)
 
 db = SQLAlchemy(app)
-
-
-app.register_blueprint(posts, url_prefix='/flask1')
-
-
 
 #
 # @app.route('/')
@@ -30,4 +23,4 @@ app.register_blueprint(posts, url_prefix='/flask1')
 #     app.run()
 #
 #
-# # remdom
+#  remdom

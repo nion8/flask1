@@ -3,7 +3,7 @@ from datetime import datetime
 import re
 
 
-def clugify(s):
+def slugify(s):
     pattern = r'[^\w+]'
     return re.sub(pattern, '-', s)
 
